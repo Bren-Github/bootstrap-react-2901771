@@ -12,25 +12,34 @@
 <body>
 
     <div class="container">
-        <div class="row ">
-            <div class="cuadrito bg-gray rounded-5 text-center shadow p-3 mb-5 rounded">
-
-                <nav>
-                    <a href="#" class="me-4 text-decoration-none text-white">Iniciar sesión</a>
-                    <a href="#" class="text-decoration-none text-white">Registrarse</a>
-                </nav>
-                <form class="mt-4">
-                    <div class="mb-3">
-                        <input type="text" class="form-control " placeholder="Usuario">
+        <div class="row">
+            <!-- Después del row se crean los col !important -->
+            <div class="col">
+                <!-- Se agrega mx-auto para centrar -->
+                <div class="cuadrito bg-gray text-center shadow mx-auto mb-5 mt-4">
+                    <div class="fotito">
+                        <img class="img" src="./source/Captura_inicio-removebg-preview.png" alt="">
                     </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control " placeholder="Contraseña">
+                    <div class="col pb-3 ">
+                        <nav>
+                            <a href="#" class="me-4 text-decoration-none text-white">Iniciar sesión</a>
+                            <a href="#" class="text-decoration-none text-white">Registrarse</a>
+                        </nav>
+                        <form class="mt-4">
+                            <div class="mb-3">
+                                <!-- Se agrega rounded-5 para igualar con caja de cuadrito -->
+                                <input type="text" class="form-control rounded-5 ml-1" placeholder="Usuario">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control rounded-5" placeholder="Contraseña">
+                            </div>
+                            <div class="mb-3">
+                                <a href="#" class="text-decoration-none small text-white">¿Has olvidado tu contraseña?</a>
+                            </div>
+                            <button type="submit" class="btn btn-light rounded-pill ">Ingresar</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <a href="#" class="text-decoration-none small text-white">¿Has olvidado tu contraseña?</a>
-                    </div>
-                    <button type="submit" class="btn btn-light rounded-pill ">Ingresar</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
